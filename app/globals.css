@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-text text-subtitle1
+    }
+
+    h4 {
+        @apply text-h4
+    }
+
+    h5 {
+        @apply text-h5
+    }
+
+    h6 {
+        @apply text-h6
+    }
+
+    button {
+        @apply text-button uppercase
+    }
+
+    p {
+        @apply text-subtitle1
+    }
+}
