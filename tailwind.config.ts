@@ -84,9 +84,17 @@ const config: Config = {
             fontWeight: "600",
           },
         ],
+        title3: [
+          "16px",
+          {
+            lineHeight: "24px",
+            fontWeight: "500",
+          },
+        ],
       },
       gridTemplateColumns: {
-        table: "375px minmax(375px, 1fr) 152px",
+        table: "300px minmax(375px, 1fr) 152px",
+        "table-mobile": "152px minmax(152px, 1fr) 152px",
       },
     },
   },

@@ -42,3 +42,8 @@ export const statMock = [
 
 export const COLORS_CHART = ["#25824F", "#FFB649", "#DB4546"];
 export const COLORS_DOTS = ["green", "orange", "red"];
+
+export const ARROW_VARIANTS = {
+  Отпуск: "fill-orange",
+  Отгул: "fill-red",
+};
