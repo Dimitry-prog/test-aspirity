@@ -8,6 +8,7 @@ import Link from "next/link";
 import Info from "@/shared/components/icons/info";
 import StatList from "@/app/(pages)/vacations/_components/stat-list";
 import HistoryVacationMobile from "@/app/(pages)/vacations/_components/history-vacation-mobile";
+import Tooltip from "@/shared/components/tooltip";
 
 const VacationsPage = async () => {
   const historyResponse = await fetch("http://localhost:3000/api/vacations");
@@ -35,7 +36,9 @@ const VacationsPage = async () => {
         <section className="max-w-full lg:min-w-[400px] xl:max-w-[516px] xl:min-w-[516px] flex flex-col gap-4 px-4 py-[30px] lg:px-[30px] rounded-xl bg-bg-secondary">
           <div className="flex items-center gap-2">
             <h5>Статистика</h5>
-            <Info />
+            <Tooltip trigger={<Info />}>
+              <p className="text-subtitle2">1 раб. месяц = 3 дня отпуска</p>
+            </Tooltip>
           </div>
 
           <div className="self-center">

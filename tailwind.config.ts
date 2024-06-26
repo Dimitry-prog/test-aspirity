@@ -18,6 +18,7 @@ const config: Config = {
         bg: {
           DEFAULT: "#141414",
           secondary: "#232324",
+          modal: "#303030",
         },
         text: {
           DEFAULT: "#E1E3E6",
